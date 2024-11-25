@@ -1,0 +1,37 @@
+Code Review Questions
+
+1. State Management:
+- Why did you choose the specific state management approach? How would you scale it for a larger application?
+
+I chose Hookstate because it offers a straightforward, extensible, and incredibly fast state management solution based on React's state hook. Its intuitive API and excellent performance make it ideal for managing both small and large states with frequent updates. Hookstate also supports TypeScript, which enhances development with complete type inference and IntelliSense support. Additionally, I appreciate its advanced object and array mutation capabilities, which allow for more efficient and precise updates to complex state structures.
+
+To scale Hookstate for a larger application, I would leverage its features such as global states, local states, and partial state updates. By organizing the state into manageable segments and using scoped states, we can ensure efficient updates and minimize performance bottlenecks. Additionally, Hookstate's plugin system allows for extending functionality, such as state validation, local storage persistence, and state snapshotting, which can be crucial for maintaining a scalable and maintainable codebase.
+
+
+
+2. Performance Optimization:
+- What techniques did you use to optimize the performance of the application? How do they work?
+
+I used two key techniques: React Virtualized and useCallback.
+
+- React Virtualized:
+What it does: React Virtualized is a library that helps manage large lists and tabular data efficiently by rendering only the visible items within the viewport. This reduces the number of DOM elements, leading to faster rendering and improved performance.
+How it works: It uses a virtual scrolling mechanism, where only a subset of the data (the items that are currently visible) is rendered at any given time. This significantly reduces the number of DOM nodes and the associated overhead, making the application faster and more responsive.
+
+- useCallback:
+What it does: useCallback is a React hook that memoizes functions, preventing them from being re-created on every render. This is particularly useful when passing callbacks to child components that rely on referential equality to prevent unnecessary re-renders.
+How it works: By using useCallback, you ensure that a function retains the same reference between renders, unless its dependencies change. This reduces the likelihood of unnecessary renders and can improve overall performance, especially in complex components with extensive state management.
+
+
+
+3. Testing Strategy:
+- How do you decide which parts of the application need to be unit tested? What are your guidelines?
+
+Although I don't have direct experience in testing yet, I am eager to learn and understand its importance in delivering high-quality software. I am particularly interested in focusing on critical business logic, complex algorithms, and high-usage components when determining which parts of the application to unit test. My guidelines would include testing components in isolation, using mocks and stubs to simulate dependencies, writing clear and descriptive tests, and integrating tests into the CI/CD pipeline to ensure issues are caught early. I look forward to gaining hands-on experience and enhancing my testing skills within the company.
+
+
+
+4. Code Structure:
+- Explain how you organized your project structure and why
+
+I've organized the project structure with clear separation of concerns to enhance maintainability and scalability. The src/app directory contains main application files like layout and page components. src/components is divided into subfolders such as icon, task, and ui for specific functionalities, promoting reusability. src/lib includes utility and state management files, while src/styles houses all styling files. This organization ensures that the codebase is easy to manage, locate, and expand, supporting both small and large-scale projects efficiently.

@@ -1,38 +1,74 @@
-# Next14-Tailwind Starter Template
+# Todo App
 
-<p align="center">
-  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9bipHLLn--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wwy6cp17cco1zk8wn0kb.jpeg" alt="twin, next, styled-components" width="500">
-</p>
+Responsive, full-featured to-do list application
 
-## Getting Started
+## Commands
 
-Run the following command to bootstrap your next-app using this template:
+### Setup
+
+Install dependencies:
 
 ```bash
-yarn create next-app [project-name] -e https://github.com/nelwincatalogo/next14-tailwind
+yarn # OR npm install
 ```
 
-OR
+### Run Locally
+
+Run the development server:
 
 ```bash
-npx create-next-app [project-name] -e https://github.com/nelwincatalogo/next14-tailwind
+yarn dev # OR npm run dev
+```
+
+Run the development server with turbo mode:
+
+```bash
+yarn dev:turbo # OR npm run dev:turbo
+```
+
+### Production
+
+Build the application:
+
+```bash
+yarn build # OR npm run build
+```
+
+Start the production server:
+
+```bash
+yarn start # OR npm run start
+```
+
+### Code formatting
+
+Check for lint errors
+
+```bash
+yarn lint:check # OR npm run lint:check
+```
+
+Fix lint errors
+
+```bash
+yarn lint:fix # OR npm run lint:fix
 ```
 
 ## Summary
 
-- [Next.js](https://nextjs.org)
-- [TailwindCSS](https://tailwindcss.com/)
-- [Absolute Import](https://nextjs.org/docs/advanced-features/module-path-aliases)
-- [Shadcn Sonner](https://ui.shadcn.com/docs/components/sonner)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-- [hookstate](https://hookstate.js.org/) (state management)
-- [Metadata for SEO](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
-- Linting
+- [Next.js](https://nextjs.org) - production ready framework for React.js
+- [TailwindCSS](https://tailwindcss.com/) - a utility-first CSS framework
+- [Absolute Import](https://nextjs.org/docs/advanced-features/module-path-aliases) - resolve module path alias
+- [Shadcn UI](https://ui.shadcn.com/) - Beautifully designed components built with Radix UI and Tailwind CSS
+- [React Icons](https://react-icons.github.io/react-icons/search) & [Lucide Icons](https://lucide.dev/) - Icon library
+- [hookstate](https://hookstate.js.org/) - State Management
+- [Metadata for SEO](https://nextjs.org/docs/app/api-reference/functions/generate-metadata) - Next.js Metadata
+- Linting - Code Formatting
   - prettier
   - eslint-config-prettier
   - eslint-plugin-prettier
   - eslint-plugin-tailwindcss
-- Lint on pre-commit
+- Lint on pre-commit - fix lint errors before commit
   - Husky
-- Default Font [Geist, Poppins, Inter]
+- Default Font [Geist, Poppins, Inter] - Google Fonts
 - TypeScript Support

@@ -13,6 +13,6 @@ export const config = [
 ];
 
 export default {
-  project: 'next14_tailwind',
+  project: 'todo-app',
   setting: config[currentMode],
 };
