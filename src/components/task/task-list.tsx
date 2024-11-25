@@ -104,7 +104,7 @@ export function TaskList() {
         </div>
       </CardHeader>
       <CardContent>
-        <div className="h-[600px] w-full">
+        <div className="h-[470px] w-full">
           {filteredTasks.length === 0 && (
             <div className="flex h-full items-center justify-center">
               <p className="text-sm text-muted-foreground">No tasks found</p>
